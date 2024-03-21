@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +10,18 @@ namespace Datos.Modelo
 {
     public class Cliente
     {
-        public int Clienteld { get; set; }
-        public string Codigo { get; set; }
+        public int ClienteId { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
-        public int GrupoDescuentold { get; set; }
-        public int CodigoPagold { get; set; }
+        public string TipoDocumento { get; set; }
+        public string NumeroDocumento { get; set; }
+        public string Direccion { get; set; }
+        public string Telefono { get; set; }
+        public string Email { get; set; }
         public bool Estado { get; set; }
         public DateTime FechaCreacion { get; set; }
+
+        public GrupoDescuento GrupoDescuento { get; set; }
+        public CondiccionPago CondicionPago { get; set; }
     }
 }

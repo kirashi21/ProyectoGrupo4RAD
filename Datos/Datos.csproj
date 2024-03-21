@@ -57,18 +57,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base de Dato\Exaconection.cs" />
+    <Compile Include="Migrations\202403200501285_AdicionesTablas.cs" />
+    <Compile Include="Migrations\202403200501285_AdicionesTablas.designer.cs">
+      <DependentUpon>202403200501285_AdicionesTablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelo\Categoria.cs" />
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\CondiccionPago.cs" />
+    <Compile Include="Modelo\DbContextOptions.cs" />
     <Compile Include="Modelo\Factura.cs" />
     <Compile Include="Modelo\FacturaDetalle.cs" />
     <Compile Include="Modelo\GrupoDescuento.cs" />
+    <Compile Include="Modelo\keyAttribute.cs" />
+    <Compile Include="Modelo\KEYAttribute1.cs" />
+    <Compile Include="Modelo\ModelBuilder.cs" />
     <Compile Include="Modelo\Pedido.cs" />
     <Compile Include="Modelo\PedidoDetalle.cs" />
     <Compile Include="Modelo\Producto.cs" />
     <Compile Include="Modelo\UnidadMedida.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Migrations\202403200501285_AdicionesTablas.resx">
+      <DependentUpon>202403200501285_AdicionesTablas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
