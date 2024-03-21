@@ -11,7 +11,6 @@ namespace Datos.Modelo
         public int FacturaDetalleld { get; set; }
         public int Facturald { get; set; }
         public DateTime FechaCreacion { get; set; }
-        public int Productold { get; set; }
         public decimal Precio { get; set; }
         public decimal Total { get; set; }
         public decimal Subtotal { get; set; }

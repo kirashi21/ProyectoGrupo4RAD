@@ -8,8 +8,13 @@ namespace Datos.Modelo
 {
     public class PedidoDetalle
     {
-        public int PedidoDetalleld { get; set; }
-        public int Pedidold { get; set; }
+        public int PedidoDetalleId { get; set; }
+
+        [ForeignKey("PedidoId")]
+        public int PedidoId { get; set; } 
+
+        [ForeignKey("ProductoId")]
+        public int ProductoId { get; set; } 
         public DateTime FechaCreacion { get; set; }
         public int Productold { get; set; }
         public decimal Precio { get; set; }
