@@ -14,15 +14,15 @@ namespace Datos.Base_de_Dato
         {
 
         }
-        public DbSet<Categoria>categorias { get; set; }
-        public DbSet<Cliente> cliente { get; set; }
-        public DbSet<CondiccionPago> condicionPago { get; set; }
-        public DbSet<Factura> factura { get; set; }
-        public DbSet<FacturaDetalle> facturaDetalle { get; set; }
-        public DbSet<GrupoDescuento> grupoDescuentos { get; set; }
-        public DbSet<Pedido> pedido { get; set; }
-        public DbSet<PedidoDetalle> pedidoDetalle { get;set; }
-        public DbSet<Producto> productos { get; set; }
-        public DbSet<UnidadMedida> unidadMedida { get; set; }
+        public DbSet<Categoria> Categorias { get; set; } 
+        public DbSet<Cliente> Clientes { get; set; } 
+        public DbSet<CondiccionPago> CondicionPagos { get; set; } 
+        public DbSet<Factura> Facturas { get; set; }   
+        public DbSet<FacturaDetalle> FacturaDetalles { get; set; } 
+        public DbSet<GrupoDescuento> GrupoDescuentos { get; set; }
+        public DbSet<Pedido> Pedidos { get; set; }    
+        public DbSet<PedidoDetalle> PedidoDetalles { get; set; } 
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<UnidadMedida> UnidadMedidas { get; set; } 
     }
 }
